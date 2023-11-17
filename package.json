@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "solidity-boilerplate",
+  "version": "0.1.0",
+  "description": "A boilerplate project to quickly kickstart your solidity projects, linting, CI setup included",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "build": "truffle build",
+    "truffle": "truffle",
+    "lint": "prettier-standard '**/*.js' --fix; solium -d contracts",
+    "lint:js": "prettier-standard '**/*.js' --fix",
+    "lint:sol": "solium -d contracts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nya1/solidity-boilerplate.git"
+  },
+  "author": "nya1",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nya1/solidity-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nya1/solidity-boilerplate#readme",
+  "devDependencies": {
+    "ethlint": "^1.2.4",
+    "prettier-standard": "^9.1.1",
+    "truffle": "^5.0.22",
+    "truffle-assertions": "^0.9.1"
+  }
+}
